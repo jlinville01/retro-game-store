@@ -174,6 +174,7 @@ export default function Checkout() {
                   </span>
                 </div>
                 <Button
+                  id="place-order-btn"
                   type="submit"
                   className="w-full bg-[var(--gradient-primary)] hover:opacity-90 text-lg py-6"
                 >

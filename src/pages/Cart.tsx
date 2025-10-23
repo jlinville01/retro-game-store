@@ -19,6 +19,7 @@ export default function Cart() {
             Looks like you haven't added any games yet
           </p>
           <Button
+            id="start-shopping-btn"
             onClick={() => navigate('/')}
             className="bg-[var(--gradient-primary)] hover:opacity-90"
           >
@@ -62,6 +63,7 @@ export default function Cart() {
                 </div>
               </div>
               <Button
+                id="proceed-to-checkout-btn"
                 onClick={() => navigate('/checkout')}
                 className="w-full bg-[var(--gradient-primary)] hover:opacity-90 text-lg py-6"
               >

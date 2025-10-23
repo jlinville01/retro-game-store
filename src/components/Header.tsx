@@ -11,12 +11,12 @@ export function Header() {
     if (location.pathname === '/cart') {
       return (
         <div className="flex items-center justify-between">
-          <Link to="/">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Shop
-            </Button>
-          </Link>
+        <Link to="/">
+          <Button id="back-to-shop-btn" variant="ghost" size="sm" className="gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Shop
+          </Button>
+        </Link>
           <h1 className="text-xl font-bold">Your Cart</h1>
           <div className="w-24" />
         </div>
@@ -26,12 +26,12 @@ export function Header() {
     if (location.pathname === '/checkout') {
       return (
         <div className="flex items-center justify-between">
-          <Link to="/cart">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Cart
-            </Button>
-          </Link>
+        <Link to="/cart">
+          <Button id="back-to-cart-btn" variant="ghost" size="sm" className="gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Cart
+          </Button>
+        </Link>
           <h1 className="text-xl font-bold">Checkout</h1>
           <div className="w-24" />
         </div>
@@ -47,7 +47,7 @@ export function Header() {
           </h1>
         </div>
         <Link to="/cart">
-          <Button variant="outline" size="sm" className="gap-2 relative">
+          <Button id="cart-btn" variant="outline" size="sm" className="gap-2 relative">
             <ShoppingCart className="h-4 w-4" />
             Cart
             {cartCount > 0 && (
