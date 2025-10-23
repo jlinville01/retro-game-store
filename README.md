@@ -1,6 +1,6 @@
 # Retro Game E-Commerce Store
 
-[Project logo]: https://github.com/jlinville01/retro-game-store/blob/main/assets/retro-game-logo.png?raw=true
+![Project logo](https://github.com/jlinville01/retro-game-store/blob/main/assets/retro-game-logo.png?raw=true)
 
 ## How can I edit this code?
 
