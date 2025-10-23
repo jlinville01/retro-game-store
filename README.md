@@ -6,13 +6,13 @@
 
 A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS.
 
-## Running Locally
+## Setup
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or bun
+- Node.js (v14 or higher) - [Download here](https://nodejs.org/)
+- npm (comes with Node.js)
 
-### Setup Instructions
+### Running Locally
 
 1. **Clone the repository**
    ```bash
