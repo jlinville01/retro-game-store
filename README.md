@@ -16,7 +16,7 @@ A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS
 
 1. **Clone the repository**
    ```bash
-   git clone <YOUR_GIT_URL>
+   git clone https://github.com/jlinville01/retro-game-store.git
    cd retro-game-store
    ```
 
