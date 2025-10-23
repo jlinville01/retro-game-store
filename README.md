@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/ba26a199-63a2-4387-9e4d-d983c726aed3
+![Project logo](https://github.com/jlinville01/retro-game-store/assets/retro-game-logo.png?raw=true)
 
 ## How can I edit this code?
 
