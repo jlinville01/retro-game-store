@@ -29,12 +29,13 @@ A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS
    ```bash
    npm run dev
    ```
-
+   - The app will be available at `http://localhost:8080`
+   
 4. **Run automation**
    ```bash
    npm run dev
    ```
-
+   
 ### Testing Checkout
 Use credit card number: `4242 4242 4242 4242` to complete a test purchase.
 
