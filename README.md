@@ -4,23 +4,38 @@
 
 ## About
 
-The objective of this application was to create a e-commerce store with <Automation-Framework> frontend tests.
+A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS.
 
-## Setup
+## Running Locally
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or bun
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Setup Instructions
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   - Navigate to `http://localhost:8080`
+   - The app will automatically reload when you make changes
+
+### Testing Checkout
+Use credit card number: `4242 4242 4242 4242` to complete a test purchase.
 
 ## This project is built with
 
