@@ -2,7 +2,7 @@ import { $ } from '@wdio/globals'
 import Page from './page.js';
 
 /**
- * sub page containing specific selectors and methods for a specific page
+ * Order Success Page selectors and methods
  */
 class OrderSuccessPage extends Page {
 
@@ -24,7 +24,7 @@ class OrderSuccessPage extends Page {
     /**
      * Click the continue shopping button
      */
-    public async clickContinueShopping () {
+    public async clickContinueShoppingButton () {
         await this.continueShopping.click();
     }
 }

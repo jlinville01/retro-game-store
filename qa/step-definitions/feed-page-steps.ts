@@ -1,25 +1,20 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect, $ } from '@wdio/globals'
 
-import FeedPage from '../pageobjects/feed.page.js';
+import FeedPage from '../pageobjects/feed.page.ts';
 
-const pages = {
-    login: LoginPage
-}
-
-Given(/^I am on the (\w+) page$/, async (page) => {
-    await pages[page].open()
-});
-
-When(/^I add 'Pokemon Yellow' to my cart$/, async () => {
-    
+When(/^I add (.*) to my cart$/, async (gameName) => {
+    FeedPage.addToCart(gameName)
 });
 
 When(/^And I click the cart button$/, async () => {
-
+    FeedPage.clickCartButton
 });
 
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
-    await expect(FeedPage.flashAlert).toBeExisting();
-    await expect(FeedPage.flashAlert).toHaveText(expect.stringContaining(message));
+Then(/^my cart should have (.*) value$/, async (quantity) => {
+    await expect(FeedPage.cartButton.$('span')).toEqual(quantity)
+});
+
+Then(/^I expect to land on the feed page$/, async (quantity) => {
+    await expect(browser).toHaveUrl(baseUrl);
 });

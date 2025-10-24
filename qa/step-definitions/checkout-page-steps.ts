@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect, $ } from '@wdio/globals'
 
-import CheckoutPage from '../pageobjects/checkout.page.js';
+import CheckoutPage from '../pageobjects/checkout.page.ts';
 
 Then(/^I expect to land on the checkout page$/, async () => {
     await expect(browser).toHaveUrl(baseUrl+'/checkout');

@@ -9,12 +9,12 @@ Feature: Feed Page
     Then my cart should have '1' value
 
   @EmptyCart
-  Scenario Outline: Clicking the cart button with an empty cart
+  Scenario: Clicking the cart button with an empty cart
 
     Given I am on the feed page
     When I click the cart button
     Then I expect to land on the cart page 
-    And I expect the checkout button to be displayed
+    And I expect the start shopping button to be displayed
 
   @FullCart
   Scenario: Clicking the cart button with a full cart

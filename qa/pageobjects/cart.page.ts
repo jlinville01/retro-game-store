@@ -2,7 +2,7 @@ import { $ } from '@wdio/globals'
 import Page from './page.js';
 
 /**
- * sub page containing specific selectors and methods for a specific page
+ * Cart Page selectors and methods
  */
 class CartPage extends Page {
 

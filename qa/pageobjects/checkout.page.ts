@@ -2,7 +2,7 @@ import { $ } from '@wdio/globals'
 import Page from './page.js';
 
 /**
- * sub page containing specific selectors and methods for a specific page
+ * Checkout Page selectors and methods
  */
 class CheckoutPage extends Page {
 
