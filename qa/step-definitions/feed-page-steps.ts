@@ -8,7 +8,7 @@ When(/^I add (.*) to my cart$/, async (gameName) => {
 });
 
 When(/^And I click the cart button$/, async () => {
-    FeedPage.clickCartButton
+    FeedPage.clickCartButton()
 });
 
 Then(/^my cart should have (.*) value$/, async (quantity) => {

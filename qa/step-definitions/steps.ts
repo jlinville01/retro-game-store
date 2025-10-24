@@ -6,5 +6,4 @@ Given(/^I am on the (.*) page$/, async (page) => {
     } else {
         await browser.url(baseUrl+'/'+page)
     }
-    await browser.pause(10000);
 });
