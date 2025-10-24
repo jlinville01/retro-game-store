@@ -15,7 +15,7 @@ class FeedPage extends Page {
      * @param {string} gameName The video game title to add.
      */
     public async addToCart (gameName: string) {
-        await $(h3=gameName).$(..).$(button='Add to Cart').click()
+        await $(`h3=${gameName}`).$('..').$('button=Add to Cart').click()
     }
 
     /**

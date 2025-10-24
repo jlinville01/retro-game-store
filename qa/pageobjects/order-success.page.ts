@@ -11,7 +11,7 @@ class OrderSuccessPage extends Page {
     }
 
     public get continueShopping () {
-        return $('button['Continue Shopping']');
+        return $('button=Continue Shopping');
     }
 
     /**
