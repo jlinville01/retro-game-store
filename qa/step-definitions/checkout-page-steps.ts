@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect, $ } from '@wdio/globals'
 
-import CheckoutPage from '../../pageobjects/checkout.page.js';
+import CheckoutPage from '../pageobjects/checkout.page.js';
 
 When(/^I click the back to cart button$/, async () => {
     CheckoutPage.clickBackToCartButton

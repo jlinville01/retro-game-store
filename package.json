@@ -8,8 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -69,10 +68,6 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
-    "@wdio/cli": "^9.20.0",
-    "@wdio/cucumber-framework": "^9.20.0",
-    "@wdio/local-runner": "^9.20.0",
-    "@wdio/spec-reporter": "^9.20.0",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
