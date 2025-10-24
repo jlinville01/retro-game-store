@@ -1,0 +1,9 @@
+{
+  "name": "retro-game-store-automation",
+  "description": "WebdriverIO frontend automation",
+  "author": "Justin Linville",
+  "license": "UNLICENSED",
+  "devDependencies": {
+  
+  }
+}
