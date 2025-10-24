@@ -4,7 +4,9 @@ import { expect, $ } from '@wdio/globals'
 import FeedPage from '../pageobjects/feed.page.ts';
 
 When(/^I add (.*) to my cart$/, async (gameName) => {
+    await browser.pause(3000);
     FeedPage.addToCart(gameName)
+    await browser.pause(3000);
 });
 
 When(/^And I click the cart button$/, async () => {

@@ -1,8 +1,8 @@
 @OrderSuccessPage
-Feature: Feed Page
+Feature: Order Success Page
 
   @ClickCartButton
-  Scenario: Adding a game to cart
+  Scenario: Clicking the cart button
 
     Given I am on the order-success page
     When I click the cart button
@@ -10,7 +10,7 @@ Feature: Feed Page
     And I expect the checkout button to be displayed
 
   @ContinueShopping
-  Scenario: Clicking the continue shopping button with an empty cart
+  Scenario: Clicking the continue shopping button
 
     Given I am on the order-success page
     When I click the continue shopping button
