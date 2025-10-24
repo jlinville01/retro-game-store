@@ -31,8 +31,19 @@ A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS
    ```
    - The app will be available at `http://localhost:8080`
    
-4. **Run automation**
+4. **Change directories**
    ```bash
+   cd qa
+   ```
+
+5. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+6. **Run automation**
+   ```bash
+   npm install
    npx wdio run ./wdio.conf.js
    ```
    
