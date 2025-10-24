@@ -11,11 +11,15 @@ Given(/^I am on the (\w+) page$/, async (page) => {
     await pages[page].open()
 });
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    await CartPage.login(username, password)
+When(/^I increase the quantity for (.*)$/, async () => {
+
 });
 
-Then(/^I should see a flash message saying (.*)$/, async (message) => {
+Then(/^Then I expect the quantity to be (.*)$/, async () => {
+
+});
+
+Then(/^And I expect the price to be (.*)$/, async (message) => {
     await expect(CartPage.flashAlert).toBeExisting();
     await expect(CartPage.flashAlert).toHaveText(expect.stringContaining(message));
 });

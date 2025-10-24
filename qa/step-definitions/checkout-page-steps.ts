@@ -3,6 +3,14 @@ import { expect, $ } from '@wdio/globals'
 
 import CheckoutPage from '../pageobjects/checkout.page.js';
 
+Then(/^I expect to land on the checkout page$/, async () => {
+    await expect(browser).toHaveUrl(baseUrl+'/checkout');
+});
+
+Then(/^I expect the place order button to be displayed$/, async () => {
+    await expect(CheckoutPage.placeOrderButton).toBeDisplayed();
+});
+
 When(/^I click the back to cart button$/, async () => {
     CheckoutPage.clickBackToCartButton
 });

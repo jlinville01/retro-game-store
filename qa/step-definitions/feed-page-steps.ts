@@ -11,8 +11,12 @@ Given(/^I am on the (\w+) page$/, async (page) => {
     await pages[page].open()
 });
 
-When(/^I login with (\w+) and (.+)$/, async (username, password) => {
-    await FeedPage.login(username, password)
+When(/^I add 'Pokemon Yellow' to my cart$/, async () => {
+    
+});
+
+When(/^And I click the cart button$/, async () => {
+
 });
 
 Then(/^I should see a flash message saying (.*)$/, async (message) => {

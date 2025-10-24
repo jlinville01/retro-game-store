@@ -10,7 +10,7 @@ Feature: Cart Page
     Then I expect the quantity to be 1
     When I increase the quantity for "Pokemon Yellow"
     Then I expect the quantity to be 2
-    And I expect the price to be $69.98
+    And I expect the price to be 69.98
 
   @RemoveItem
   Scenario Outline: Removing an item from cart
