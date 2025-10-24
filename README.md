@@ -43,7 +43,6 @@ A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS
 
 6. **Run automation**
    ```bash
-   npm install
    npx wdio run ./wdio.conf.js
    ```
    
