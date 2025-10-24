@@ -3,6 +3,10 @@ import { expect, $ } from '@wdio/globals'
 
 import CartPage from '../pageobjects/cart.page.ts';
 
+Then(/^I expect to land on the cart page$/, async () => {
+    await expect(browser).toHaveUrl(baseUrl+'/cart');
+}); 
+
 When(/^I increase the quantity for (.*)$/, async (gameName) => {
     $(`h3=${gameName}`).$('..').$('..').$('button').$('svg[class="lucide-plus"]').click()
 });
@@ -19,7 +23,7 @@ Then(/^And I expect the price to be (.*)$/, async (quantity) => {
     await expect($(`h3=${gameName}`).$('..').$('..').$('div').$('p[class="text-lg font-bold text-secondary"]')).to.include(quantity)
 });
 
-When(/^When I click the remove button for (.*)$/, async (gameName) => {
+When(/^I click the remove button for (.*)$/, async (gameName) => {
     $(`h3=${gameName}`).$('..').$('..').$('button').$('svg[class="lucide-trash2"]').click()
 });
 
