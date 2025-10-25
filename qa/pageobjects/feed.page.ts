@@ -16,8 +16,6 @@ class FeedPage extends Page {
      */
     public async addToCart (gameName: string) {
         await $(`h3=${gameName}`).$('..').$('div').$('button=Add to Cart').click()
-        // await $('h3=Pokemon Yellow').$('..').$('div').$('span').$('button=Add to Cart').click()
-        await browser.pause(100000);
     }
 
     /**

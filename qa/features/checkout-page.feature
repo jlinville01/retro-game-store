@@ -5,7 +5,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty full name input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -15,7 +15,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty address line 1 input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -25,7 +25,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty city input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -35,7 +35,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty state input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -45,7 +45,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty zip code input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -55,7 +55,7 @@ Feature: Checkout Page
     Scenario: Attempting to place order with empty credit card input
     
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I click the place order button
@@ -65,7 +65,7 @@ Feature: Checkout Page
     Scenario: Entering an invalid credit card number
 
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I enter 1234123412341234 into the credit card imput
@@ -75,7 +75,7 @@ Feature: Checkout Page
     Scenario: Placing an order
 
         Given I am on the feed page
-        And I add 'Pokemon Yellow' to my cart
+        And I add "Pokemon Yellow" to my cart
         And I click the cart button
         And I click the proceed to checkout button
         When I place order with template test data
