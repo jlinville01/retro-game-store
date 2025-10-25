@@ -2,10 +2,6 @@
 
 ![Project logo](https://github.com/jlinville01/retro-game-store/blob/main/assets/retro-game-logo.png?raw=true)
 
-## About
-
-A retro Game Boy e-commerce store built with React, TypeScript, and Tailwind CSS.
-
 ## Setup
 
 ### Prerequisites
