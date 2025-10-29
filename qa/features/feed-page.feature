@@ -5,7 +5,7 @@ Feature: Feed Page
   Scenario: Adding a game to cart
     Given I am on the feed page
     When I add "Pokemon Yellow" to my cart
-    Then my cart should have 1 value
+    Then my cart should have "1" value
 
   @EmptyCart
   Scenario: Clicking the cart button with an empty cart

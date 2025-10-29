@@ -7,6 +7,10 @@ Then(/^I expect to land on the cart page$/, async () => {
     await expect(browser).toHaveUrl(baseUrl+'/cart');
 }); 
 
+Then(/^I expect the checkout button to be displayed$/, async () => {
+    await expect(CartPage.proceedToCheckoutButton).toBeDisplayed()
+}); 
+
 When(/^I increase the quantity for (.*)$/, async (gameName) => {
     $(`h3=${gameName}`).$('..').$('..').$('button').$('svg[class="lucide-plus"]').click()
 });
@@ -15,12 +19,12 @@ When(/^I decrease the quantity for (.*)$/, async (gameName) => {
     $(`h3=${gameName}`).$('..').$('..').$('button').$('svg[class="lucide-minus"]').click()
 });
 
-Then(/^Then I expect the quantity for (,*) to be (.*) $/, async (gameName, quantity) => {
+Then(/^I expect the quantity for (.*) to be (.*) $/, async (gameName, quantity) => {
     await expect($(`h3=${gameName}`).$('..').$('..').$('button').$('span')).toEqual(quantity)
 });
 
-Then(/^And I expect the price to be (.*)$/, async (quantity) => {
-    await expect($(`h3=${gameName}`).$('..').$('..').$('div').$('p[class="text-lg font-bold text-secondary"]')).to.include(quantity)
+Then(/^I expect the price to be (.*)$/, async (quantity) => {
+    await expect($(`h3=${quantity}`).$('..').$('..').$('div').$('p[class="text-lg font-bold text-secondary"]')).to.include(quantity)
 });
 
 When(/^I click the remove button for (.*)$/, async (gameName) => {

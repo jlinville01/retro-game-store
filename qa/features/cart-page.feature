@@ -7,9 +7,9 @@ Feature: Cart Page
     Given I am on the feed page
     And I add "Pokemon Yellow" to my cart
     And I click the cart button
-    Then I expect the quantity to be 1
+    Then I expect the quantity for "Pokemon Yellow" to be "1"
     When I increase the quantity for "Pokemon Yellow"
-    Then I expect the quantity for "Pokemon Yellow" to be 2
+    Then I expect the quantity for "Pokemon Yellow" to be "2"
     And I expect the price to be 69.98
 
   @RemoveItem
