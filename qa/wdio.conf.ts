@@ -51,18 +51,20 @@ export const config: WebdriverIO.Config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        browserName: 'chrome',
-        'wdio:devtoolsOptions': {
-            headless: true,
+    capabilities: [
+        {
+            browserName: 'chrome',
+            'goog:chromeOptions': {
+                args: ['--headless=new', '--no-sandbox', '--disable-dev-shm-usage'],
+            },
         },
-    },
-    {
-        browserName: 'firefox',
-        'wdio:devtoolsOptions': {
-            headless: true,
+        {
+            browserName: 'firefox',
+            'moz:firefoxOptions': {
+                args: ['-headless'],
+            },
         },
-    }],
+    ],
 
     //
     // ===================
@@ -111,7 +113,7 @@ export const config: WebdriverIO.Config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['devtools'],
+    services: [],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
