@@ -7,3 +7,7 @@ Given(/^I am on the (.*) page$/, async (page) => {
         await browser.url(baseUrl+'/'+page)
     }
 });
+
+Given("I have a new browser session", async () => {
+  await browser.reloadSession();
+});

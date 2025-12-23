@@ -1,6 +1,15 @@
 @CartPage
 Feature: Cart Page
 
+  @TestScenario
+  Scenario: Test Test Test
+    
+    Given I have a new browser session
+    And I have "Pokemon Yellow" in my cart
+    And I am on the cart page
+    When I click the proceed to checkout button
+    And I expect the place order button to be displayed
+
   @EditQuantity
   Scenario: Adjusting the quantity of an item in cart
     

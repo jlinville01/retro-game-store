@@ -1,0 +1,7 @@
+{
+  "items": [
+    { "id": "mario-nes", "name": "Super Mario Bros", "price": 29.99 },
+    { "id": "zelda-snes", "name": "Zelda", "price": 49.99 },
+    { "id": "pokemon-yellow", "name": "Pokemon Yellow", "price": 34.99 }
+  ]
+}
