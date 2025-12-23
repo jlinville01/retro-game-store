@@ -40,6 +40,10 @@
 6. **Run automation**
    ```bash
    npx wdio run ./wdio.conf.js
+   OR
+   npm run test:chrome
+   OR
+   npm run test:firefox
    ```
    
 ### Testing Checkout
